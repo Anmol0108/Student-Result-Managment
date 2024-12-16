@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Results</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linking the CSS file -->
+</head>
+<body>
+    <div class="container">
+        <!-- Calculator Section -->
+        <div class="calculator">
+            <div class="header">
+                <h2>Student Results</h2>
+            </div>
+
+            <div class="box">
+                <h1>Enter Marks</h1>
+                <input type="text" id="html" placeholder="HTML Marks"><br>
+                <input type="text" id="css" placeholder="CSS Marks"><br>
+                <input type="text" id="bootstrap" placeholder="Bootstrap Marks"><br>
+                <input type="text" id="javascript" placeholder="JavaScript Marks"><br>
+                <input type="text" id="react" placeholder="React Marks"><br>
+                <input type="text" id="name" placeholder="Student's Name"><br>
+                <button onclick="calculateResult()">Submit</button>
+                <p id="totalmarks"></p>
+                <p id="result"></p>
+                <p id="duplicate-warning" class="warning"></p> <!-- Warning for duplicate name -->
+            </div>
+        </div>
+
+        <!-- Result List Section -->
+        <div class="results">
+            <ul id="container-list"></ul>
+            <button class="copy-btn" onclick="copyResults()">Copy Results</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Linking the JavaScript file -->
+</body>
+</html>
